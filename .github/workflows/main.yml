@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  my_test:
+    runs-on: ubuntu-latest
+    name: codespell and artistic style run
+    steps:
+    - name: codespell and artistic style run
+      id: cs_as
+      uses: https://github.com/embalbe/activity_test.git
+      with:
+        codespell_list: 'codespell.pippo'
+        astyle_cfg: 'astyle.pluto'
+    # Use the output from the `hello` step
+    - name: Get the results
+      run: echo "The results is ${{ steps.cs_as.outputs.results }}"
