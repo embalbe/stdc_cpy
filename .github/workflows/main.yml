@@ -10,14 +10,14 @@ jobs:
       uses: embalbe/activity_test@master
       with:
         codespell_list: 'codespell.pippo'
-        astyle_cfg: 'NONE'
+        astyle_cfg: 'SKIP'
     - name: artistic style
       id: astyle
       uses: embalbe/activity_test@master
       with:
-        codespell_list: 'NONE'
+        codespell_list: 'SKIP'
         astyle_cfg: 'astyle.pluto'
     # Use the output from the `hello` step
     - name: Get the results
-      run: echo "test 003 print results ${{ steps.codespell.outputs.results }}"
-           echo "test 003 print results ${{ steps.astyle.outputs.results }}"
+      run: echo "test 004 print results ${{ steps.codespell.outputs.results }} \n"
+           echo "test 004 print results ${{ steps.astyle.outputs.results }}"
