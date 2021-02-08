@@ -21,5 +21,5 @@ jobs:
         astyle_cfg: 'astyle.pluto'
     # Use the output from the `hello` step
     - name: Get the results
-      run: echo "test 012 print results ${{ steps.codespell.outputs.results }} \r"
-           echo "test 012 print results ${{ steps.astyle.outputs.results }}"
+      run: echo "test 013 print results ${{ steps.codespell.outputs.results }} \r"
+           echo "test 013 print results ${{ steps.astyle.outputs.results }}"
