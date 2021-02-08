@@ -9,17 +9,17 @@ jobs:
       id: codespell
       uses: embalbe/activity_test@master
       with:
-        repo: ' https://github.com/embalbe/stdc_cpy.git '
+        repo: "https://github.com/embalbe/stdc_cpy.git"
         codespell_list: 'codespell.pippo'
         astyle_cfg: 'SKIP'
     - name: artistic style
       id: astyle
       uses: embalbe/activity_test@master
       with:
-        repo: ' https://github.com/embalbe/stdc_cpy.git '
+        repo: "https://github.com/embalbe/stdc_cpy.git"
         codespell_list: 'SKIP'
         astyle_cfg: 'astyle.pluto'
     # Use the output from the `hello` step
     - name: Get the results
-      run: echo "test 008 print results ${{ steps.codespell.outputs.results }} \r"
-           echo "test 008 print results ${{ steps.astyle.outputs.results }}"
+      run: echo "test 009 print results ${{ steps.codespell.outputs.results }} \r"
+           echo "test 009 print results ${{ steps.astyle.outputs.results }}"
