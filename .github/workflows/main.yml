@@ -13,4 +13,4 @@ jobs:
         astyle_cfg: 'astyle.pluto'
     # Use the output from the `hello` step
     - name: Get the results
-      run: echo "test 001 print results ${{ steps.cs_as.outputs.results }}"
+      run: echo "test 002 print results ${{ steps.cs_as.outputs.results }}"
