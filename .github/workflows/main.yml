@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: codespell and artistic style run
     steps:
-    - name: codespell
+    - name: code spell
       id: codespell
       uses: embalbe/activity_test@master
       with:
