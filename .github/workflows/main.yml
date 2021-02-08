@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: codespell and artistic style run
       id: cs_as
-      uses: embalbe/activity_test
+      uses: embalbe/activity_test@master
       with:
         codespell_list: 'codespell.pippo'
         astyle_cfg: 'astyle.pluto'
