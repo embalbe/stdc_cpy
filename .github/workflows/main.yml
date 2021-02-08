@@ -20,4 +20,4 @@ jobs:
     # Use the output from the `hello` step
     - name: Get the results
       run: echo "test 003 print results ${{ steps.codespell.outputs.results }}"
-      run: echo "test 003 print results ${{ steps.astyle.outputs.results }}"
+           echo "test 003 print results ${{ steps.astyle.outputs.results }}"
