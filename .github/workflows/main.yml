@@ -18,7 +18,7 @@ jobs:
       with:
         repo: 'https://github.com/embalbe/stdc_cpy.git'
         codespell_list: 'SKIP'
-        astyle_cfg: 'astyle.pluto'
+        astyle_cfg: './.github/workflows/astyle.cfg'
     # Use the output from the `hello` step
     - name: Get the results
       run: echo "test 013 print results ${{ steps.codespell.outputs.results }} \r"
