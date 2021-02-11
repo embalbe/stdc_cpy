@@ -10,7 +10,7 @@ jobs:
       uses: embalbe/activity_test/action_001@master
       with:
         repo: 'https://github.com/embalbe/stdc_cpy.git'
-        codespell_list: 'codespell.pippo'
+        codespell_list: './.github/workflows/codespell.cfg'
         astyle_cfg: 'SKIP'
     - name: artistic style
       id: astyle
@@ -21,5 +21,5 @@ jobs:
         astyle_cfg: './.github/workflows/astyle.cfg'
     # Use the output from the `hello` step
     - name: Get the results
-      run: echo "test 020 print results ${{ steps.codespell.outputs.results }} \r"
-           echo "test 020 print results ${{ steps.astyle.outputs.results }}"
+      run: echo "test 021 print results ${{ steps.codespell.outputs.results }} \r"
+           echo "test 021 print results ${{ steps.astyle.outputs.results }}"
